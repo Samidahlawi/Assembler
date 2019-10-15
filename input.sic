@@ -1,0 +1,13 @@
+PRO   START  0X0
+       LDX  LABLE
+LOOP   LDCH  STRING,X
+       TIX STR1
+       JEQ done
+       WD VAR
+       J LOOP
+STR1   WORD 11
+LABLE  WORD 10
+VAR    BYTE x'02'
+TEST   RESW 10
+STRING BYTE C'hello sic'
+       END PRO
